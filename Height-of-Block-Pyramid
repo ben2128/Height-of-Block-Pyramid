@@ -1,0 +1,10 @@
+blocks=int(input("Enter the number of blocks "))
+height = 0
+rows_made = 1
+for rows_made in range(blocks):
+    if rows_made < blocks:
+        rows_made = rows_made + 1
+        blocks -= rows_made #It's set up how you would build it in real life. For every iteration you are "taking" blocks from 'blocks' and placing them in 'rows made'. 
+        height += 1
+print ("The height of the pyramid is", height) 
+
